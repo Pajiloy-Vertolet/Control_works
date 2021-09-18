@@ -1,12 +1,11 @@
 // Задание 1
-let myName = "Сергей";
+let Name = "Сергей";
 // Задание 2
-const myBirthYear = 2002;
+const YearOfBirth = 2002;
 
 // Задание 3
-function sayHello(name = null) {
-    let trueName = name == null ? myName : name;
-    alert('Hello, ' + trueName + '!');
+function Greeting(name) {
+    alert('Hello, ' + name + '!');
 }
 
 // Задание 4
@@ -54,9 +53,9 @@ function calculate(numbers = 9) {
     return result;
 }
 
-sayHello();
-document.writeln('Задание 1: ' + myName + '<br>');
-document.writeln('Задание 2: ' + myBirthYear + '<br>');
+Greeting(Name);
+document.writeln('Задание 1: ' + Name + '<br>');
+document.writeln('Задание 2: ' + YearOfBirth + '<br>');
 let arr = range(15, 30);
 document.writeln('Задание 4: ' + arr + '<br>');
 arr = rangeOdd(15, 30);
